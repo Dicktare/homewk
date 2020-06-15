@@ -1,0 +1,66 @@
+.pf {
+  grid-area: pf;
+  background-color: red;
+}
+.ln {
+  grid-area: ln;
+  background-color: blue;
+}
+.pi {
+  grid-area: pi;
+  background-color: yellow;
+}
+.sh1 {
+  grid-area: sh1;
+  background-color: green;
+}
+.sh2 {
+  grid-area: sh2;
+  background-color: black;
+}
+
+.header {
+  grid-area: header;
+  background-color: pink;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lime;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3em 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: stretch;
+  grid-template-areas: 
+  "header header header header header"
+  "pf pf . sh1 sh1"
+  "pf pf . sh1 sh1"
+  "pf pf . sh1 sh1"
+  "pf pf . sh1 sh1"
+  "ln ln . . ."
+  "pi pi . sh2 sh2"
+  "pi pi . sh2 sh2"
+  "pi pi . sh2 sh2"
+  "footer footer footer footer footer";
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.sidebar{
+  width: 8em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
